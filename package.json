@@ -2,28 +2,27 @@
   "name": "mind-and-life",
   "version": "1.0.0",
   "dependencies": {
-    "blur-js": "^1.0.0",
+    "blur-js": ">=1.0.0",
     "gulp": "*",
-    "jshint": "*",
-    "mathsass": "^0.10.0",
-    "gulp-autoprefixer": "*",
-    "gulp-concat": "*",
+    "gulp-autoprefixer": ">=4.0.0",
+    "gulp-concat": ">=2.6.1",
     "gulp-cssnano": "*",
-    "gulp-jshint": "*",
+    "gulp-jshint": "^2.0.4",
     "gulp-livereload": "*",
-    "gulp-notify": "*",
+    "gulp-notify": "^3.0.0",
     "gulp-plumber": "*",
     "gulp-rename": "*",
-    "gulp-replace": "*",
-    "gulp-ruby-sass": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
-    "gulp-util": "*",
-    "gulp-watch": "*",
-    "map-stream": "*",
-    "yargs": "*"
+    "gulp-replace": "^0.6.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.5",
+    "map-stream": "^0.1.0",
+    "yargs": "^9.0.0"
   },
   "devDependencies": {
-    "mathsass": "^0.10.0"
+    "mathsass": "^0.10.1"
   }
 }

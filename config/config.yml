@@ -25,7 +25,7 @@ ishMaximum: '2600'
 ishControlsHide:
     - hay
 styleguideKit: pattern-lab/styleguidekit-twig-default
-styleguideKitPath: vendor/pattern-lab/styleguidekit-twig-default
+styleguideKitPath: 'C:\Users\Wassabi.vl\Documents\GitHub\styleguide\vendor/pattern-lab/styleguidekit-twig-default'
 lineageMatch: '{%([ ]+)?include( |\()[&quot;\&#039;]([A-Za-z0-9-_]+)[&quot;\&#039;](\))?(.*)%}'
 lineageMatchKey: 3
 patternExtension: twig
@@ -41,4 +41,4 @@ twigTestExt: test.php
 plugins:
     faker:
         enabled: true
-        locale: en_EN
+        locale: en_US
