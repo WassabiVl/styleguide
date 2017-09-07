@@ -1,0 +1,8 @@
+$color-primary: rgba(200,15,0,1);
+$color-secondary: rgba(73,43,180,1);
+$color-tertiary: rgba(95,96,97,1);
+$color-primary-contrast: rgba(255,255,255,1);
+$color-secondary-contrast: rgba(255,255,255,1);
+$color-tertiary-contrast: rgba(255,255,255,1);
+$font-default-color: rgba(0,0,0,1);
+$font-default-placeholder: rgba(127,127,127,1);

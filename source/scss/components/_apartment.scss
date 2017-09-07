@@ -1,0 +1,48 @@
+//
+// Navigation
+//=================================================================================================
+
+
+// @globals
+//
+//===================================================================
+
+@import "../base/globals";
+
+
+
+// @variables
+//
+//===================================================================
+
+
+
+// @mixins
+//
+//===================================================================
+
+
+
+// @styles
+//
+//===================================================================
+
+@include exports("apartment") {
+  .apartment{
+    .apartment-image{
+      background: $gray-medium;
+      min-height: 1px;
+    }
+    .apartment-text{
+      border: 1px solid $gray-medium;
+      border-top:0;
+      background: $white;
+      padding:$pad;
+      color: $color-tertiary !important;
+      p{
+        color:$color-tertiary  !important;
+      }
+
+    }
+  }
+}

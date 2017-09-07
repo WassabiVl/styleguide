@@ -1,0 +1,132 @@
+//-- generated
+
+
+$color-primary: rgb(75, 112, 255);
+$color-secondary: rgb(124, 42, 50);
+$color-tertiary: rgb(80, 86, 79);
+
+$color-primary-contrast: rgb(255, 255, 255);
+$color-secondary-contrast: rgb(255, 255, 255);
+$color-tertiary-contrast: rgb(255, 255, 255);
+
+$font-default-color: $color-tertiary;
+$font-default-placeholder: rgb(127, 127, 127);
+$font-default-link-color: rgb(200, 50, 100);
+$font-default-link-color-hover: rgb(255, 50, 100);
+
+$font-size: 28px!default;
+$namespace: bootstrap !default;
+
+$font-primary: "PTSans", Arial;
+$font-primary-url: '';
+$font-secondary: Arial, Arial;
+$font-secondary-url: '';
+
+$button-default-color: $color-primary;
+$button-default-font-color: $color-primary-contrast;
+$border-default-color: rgba($color-primary, .8);
+
+$button-default-color-hover: $color-secondary;
+$button-default-font-color-hover: $color-secondary-contrast;
+$border-default-color-hover: rgba($color-tertiary, .8);
+
+//---
+//--- Headlines
+$h1-font: $font-primary;
+$h2-font: $font-primary;
+$h3-font: $font-primary;
+$h4-font: $font-primary;
+$h5-font: $font-primary;
+$h6-font: $font-primary;
+
+$h-fonts: $h1-font, $h2-font, $h3-font, $h4-font, $h5-font, $h6-font;
+
+$h1-color: $color-tertiary;
+$h2-color: $color-primary;
+$h3-color: $color-primary;
+$h4-color: $color-primary;
+$h5-color: $color-primary;
+$h6-color: $color-primary;
+$h-colors: $h1-color, $h2-color, $h3-color, $h4-color, $h5-color, $h6-color;
+
+$h1-underline: false;
+$h2-underline: false;
+$h3-underline: false;
+$h4-underline: false;
+$h5-underline: false;
+$h6-underline: false;
+$h-underlines: $h1-underline, $h2-underline, $h3-underline, $h4-underline, $h5-underline, $h6-underline;
+
+$h1-italic: false;
+$h2-italic: false;
+$h3-italic: false;
+$h4-italic: false;
+$h5-italic: false;
+$h6-italic: false;
+$h-italics: $h1-italic, $h2-italic, $h3-italic, $h4-italic, $h5-italic, $h6-italic;
+
+$h1-center: true;
+$h2-center: true;
+$h3-center: true;
+$h4-center: true;
+$h5-center: true;
+$h6-center: true;
+$h-centers: $h1-center, $h2-center, $h3-center, $h4-center, $h5-center, $h6-center;
+
+$h1-uppercase: true;
+$h2-uppercase: true;
+$h3-uppercase: true;
+$h4-uppercase: true;
+$h5-uppercase: true;
+$h6-uppercase: true;
+$h-uppercases: $h1-uppercase, $h2-uppercase, $h3-uppercase, $h4-uppercase, $h5-uppercase, $h6-uppercase;
+
+//---
+//--- List Color
+
+$list-ul-color: $font-default-color;
+$list-ol-color: $font-default-color;
+
+//--
+//---- Content as Boxes?
+
+$content-as-boxes: false;
+
+//--
+//--- Effects
+
+$effect-scroll-appear: true;
+$effect-head-image-parallax: false; // Needs images with 400px height
+$effect-image-zoom-on-hover: true;
+
+// Fonts
+
+@font-face {
+  font-family: 'PTSans';
+  src:  url('../fonts/ptsans_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/ptsans_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/ptsans_italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/ptsans_bolditalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+
+}
+

@@ -1,0 +1,140 @@
+//
+// Navigation
+//=================================================================================================
+
+
+// @globals
+//
+//===================================================================
+
+@import "../base/globals";
+
+
+
+// @variables
+//
+//===================================================================
+
+
+
+// @mixins
+//
+//===================================================================
+
+
+
+// @styles
+//
+//===================================================================
+
+@include exports("weather") {
+  .weather{
+    position: relative;
+    .weather-icon{
+      padding: 0 1.15rem;
+      &:before, &:after{
+        position: absolute;
+        height:10px;
+        width:10px;
+        top:0;
+        left:0;
+        font-family: "Font Awesome 5 Light";
+      }
+      &.i01d{
+        &:before{
+          content: "\f185";
+        }
+      }
+      &.i01n{
+        &:before{
+          content: "\f186";
+        }
+      }
+      &.i02d{
+        &:before{
+          content: "\f185";
+          left: 14px;
+          top: -7px;
+        }
+        &:after{
+          content: "\f0c2";
+          font-family: "Font Awesome 5 Solid";
+        }
+      }
+      &.i02n{
+        &:before{
+          content: "\f186";
+          top: -8px;
+          left: -6px;
+        }
+        &:after{
+          content: "\f0c2";
+          font-family: "Font Awesome 5 Solid";
+          left:4px;
+        }
+      }
+      &.i03d,&.i03n{
+        &:before{
+          content: "\f0c2";
+          font-family: "Font Awesome 5 Solid";
+        }
+      }
+      &.i04d,&.i04n{
+        &:before{
+          content: "\f0c2";
+          font-family: "Font Awesome 5 Solid";
+        }
+        &:after{
+          content: "\f0c2";
+          left:-6px;
+          top:-9px;
+        }
+      }
+      &.i09d,&.i09n{
+        &:before{
+          content: "\f043";
+        }
+      }
+      &.i10d,&.i10n{
+        &:before{
+          content: "\f043";
+          color: #86a6ff;
+          left:15px;
+          font-family: Font Awesome\ 5 Solid;
+        }
+      }
+      &.i11d,&.i11n{
+        &:before {
+          content: "\f0e7";
+          top: 5px;
+          left: 9px;
+          color: #FD0;
+          font-family: Font Awesome\ 5 Solid;
+        }
+        &:after{
+          content: "\f0c2";
+          left: 0px;
+          top: -11px;
+          font-family: Font Awesome\ 5 Solid;
+        }
+      }
+      &.i13d,&.i13n{
+        &:before{
+          content: "\f2dc";
+        }
+      }
+      &.i50d,&.i50n{
+        &:before{
+          content: "\f0c2";
+          font-family: Font Awesome\ 5 Solid;
+        }
+        &:after{
+          content: "\f0c9";
+          left: -11px;
+          top: 11px;
+          font-family: Font Awesome\ 5 Light;
+        }
+      }
+    }
+  }
+}

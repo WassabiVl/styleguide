@@ -1,0 +1,210 @@
+//
+// Navigation
+//=================================================================================================
+
+
+// @globals
+//
+//===================================================================
+
+@import "../base/globals";
+
+
+
+// @variables
+//
+//===================================================================
+
+
+
+// @mixins
+//
+//===================================================================
+
+
+
+// @styles
+//
+//===================================================================
+
+@include exports("forms") {
+
+  input{
+    border-radius: 0;
+    width:100%;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    &[type=text], &[type=password], &[type=url], &[type=email], &[type=search], &[type=number]{
+      width:100%;
+    }
+    &[type=submit]{
+      margin-top:$pad*2;
+    }
+    padding: $pad/2 $pad/4;
+    margin: $pad/2 0;
+    border: 1px solid mix($border-default-color, $white, 50);
+    &::-webkit-input-placeholder{
+      color: $font-default-placeholder;
+    }
+    &:-moz-placeholder{
+      color: $font-default-placeholder;
+    }
+    &::-moz-placeholder{
+      color: $font-default-placeholder;
+    }
+    &:-ms-input-placeholder{
+      color: $font-default-placeholder;
+    }
+
+    &+p{
+      margin-top: $pad;
+    }
+  }
+  textarea{
+    border: 1px solid mix($border-default-color, $white, 50);
+    resize: vertical;
+  }
+  button{
+    border-radius: 0;
+  }
+
+  textarea, select{
+    width: 100%;
+    padding: $pad/2 $pad/4;
+  }
+
+  label, span.label{
+    color: $font-default-color;
+    display:block;
+    margin-top: $pad;
+    margin-bottom: $pad/4;
+  }
+
+  form{
+    max-width:100%;
+    margin: auto;
+    ul{
+      display:block !important;
+    }
+    li{
+      &:before{
+        content: "";
+        display:none;
+      }
+    }
+  }
+
+  input[type=checkbox],input[type=radio]{
+    position: fixed;
+    left: -999px;
+    top: -999px;
+    &+label{
+      line-height: 1.5rem;
+      display:inline-block;
+      position: relative;
+      margin-right:1rem;
+      margin-top: .5rem;
+      cursor: pointer;
+      &:before{
+        position: relative;
+        content: " ";
+        padding: .7rem;
+        vertical-align: bottom;
+        display: inline-block;
+        background: #fff;
+        border: 1px solid $gray-dark;
+        margin-right: .5rem;
+      }
+      &:after {
+        position: absolute;
+        left: rem-calc(2);
+        top: rem-calc(0);
+        height: 1rem;
+        width: 1rem;
+        font-size: 1.2rem;
+        font-family: "Font Awesome 5 Light";
+        color: $color-secondary;
+        content: "\f00c";
+        opacity: 0;
+        transform: scale(2);
+        transition: all ease-in-out 200ms;
+      }
+    }
+    &:checked {
+      &+label{
+        &:after {
+          opacity: 1;
+          line-height: 30px;
+          left:.25rem;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  input[type=radio]{
+    &+label{
+      &:before{
+        border-radius: 50%;
+      }
+      &:after{
+        content: "\f111";
+        left: .35rem;
+        font-size: 1rem;
+        transform: scale(1.5);
+        font-family: "Font Awesome 5 Solid";
+        text-shadow:  0 0 2px mix($color-secondary,$white,50);
+      }
+    }
+  }
+
+  .validate-error{
+    span{
+      display: block;
+      color: $color-secondary;
+      margin-top: 0.5rem;
+
+    }
+
+  }
+
+  .confirm-window{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba($gray-dark,.7);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .content{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 140px;
+      width: 410px;
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+      transform: translate(-50%,-50%);
+      box-shadow: $box-shadow-decent-default;
+    }
+    @media #{$small-only}{
+      height: 216px;
+      width:300px;
+      a{
+        width: 100%;
+      }
+    }
+  }
+
+  // TYPO3 Debug Fix
+
+  .extbase-debugger-tree input {
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .typo3-message .message-body{
+    font-size: 1rem;
+  }
+
+}

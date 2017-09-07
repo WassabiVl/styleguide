@@ -1,0 +1,49 @@
+{% block content %}
+    {%  if bgColor is defined %}
+        <div class="fragment {{bgColor}}">
+    {% else %}
+        <div class="fragment {{random(fragmentSetup.colorRange)}}">
+    {% endif %}
+    {% if templateRender == false %}
+        {% include "atoms-colorswitch" %}
+    {% endif %}
+
+    <div class="page-wrapper">
+        <div class="row ns">
+            <div class="column column-100 no-padding">
+                <div class="headline">
+                    <h2>Bilder aus unserem Hotel</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row ns">
+            <div class="column column-33 column-s-100">
+                <div class="box-with-icon street-view">
+                    {{text}}
+                </div>
+            </div>
+            <div class="column column-33 column-s-100">
+                <div class="box-with-icon bath">
+                    {{text}}
+                </div>
+            </div>
+            <div class="column column-33 column-s-100">
+                <div class="box-with-icon address-card">
+                    {{text}}
+                </div>
+            </div>
+            <div class="column column-33 column-s-100">
+                <div class="box-with-icon bath">
+                    {{text}}
+                </div>
+            </div>
+            <div class="column column-33 column-s-100">
+                <div class="box-with-icon bath">
+                    {{text}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

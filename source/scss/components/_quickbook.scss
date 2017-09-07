@@ -1,0 +1,124 @@
+//
+// Navigation
+//=================================================================================================
+
+
+// @globals
+//
+//===================================================================
+
+@import "../base/globals";
+
+
+
+// @variables
+//
+//===================================================================
+
+
+
+// @mixins
+//
+//===================================================================
+
+
+
+// @styles
+//
+//===================================================================
+
+@include exports("quickbook") {
+  #d21-quickbook{
+    position: absolute;
+    right: 0;
+    width: 320px;
+    max-width:320px;
+    background: #fff;
+    top: 3rem;
+    border: 1px solid $color-tertiary;
+    border-top:0;
+    min-height: 0px;
+    height:auto;
+    text-align: center;
+    display:none;
+
+    #d21-occupancy-container, #d21-arrival-container, #d21-los-container,
+    input, select{
+      font-size: .9rem !important;
+      line-height:.9rem !important;;
+      height:2rem  !important;;
+    }
+    .material-icons{
+      font-size: 1.3rem  !important;
+      line-height: 2rem  !important;
+      height: 2rem  !important;
+      width: 1.7rem !important;
+    }
+    form{
+      max-width:100%;
+    }
+    select, input{
+      vertical-align:top !important;
+      margin-top:0;
+    }
+    #d21-headline-container{
+      display:none;
+    }
+    #d21-submit-container{
+      margin-bottom:0;
+    }
+    .picker__box{
+      padding:0;
+      padding-bottom: 1px;
+      height: auto;
+    }
+    .picker{
+      left:0;
+      height:auto;
+      font-size: 1rem;
+      *{
+        height:auto;
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+      .picker__day{
+        width: 100%;
+        text-align: center;
+      }
+      .picker__header{
+        width:100%;
+      }
+      .picker__nav--next{
+        right:0;
+      }
+      .picker__holder{
+        right: -7px;
+      }
+      #d21-avail-result-container{
+        height:auto;
+        div{
+          height: auto;
+          line-height: 2rem;
+          span{
+            display:block;
+          }
+        }
+      }
+      #d21-quickbook i{
+        line-height: 2rem;
+      }
+      table{
+        th,td{
+          padding:.0rem;
+          text-align: center !important;
+          line-height: 1.5rem !important;
+          >div{
+            text-align: center !important;
+            line-height: 1.5rem !important;
+          }
+        }
+      }
+    }
+  }
+
+}

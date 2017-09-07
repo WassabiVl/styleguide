@@ -1,0 +1,36 @@
+{% block content %}
+<div class="fragment tertiary-color">
+
+    <div class="page-wrapper">
+        <div class="row ns">
+            <div class="column column-100 no-padding">
+                <div class="headline">
+                    <h2>Appartments</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row ns">
+            {% for i in range(1,5) %}
+                <div class="column column-33 column-s-100">
+                    <div class="apartment">
+                        <div class="apartment-image">
+                            <img src="{{ image.src }}" alt="{{ image.alt }}" />
+                        </div>
+                        <div class="apartment-text">
+                            {{text}}
+                            <ul>
+                                <li> Liste 1</li>
+                                <li> Liste 2</li>
+                                <li> Liste 3</li>
+                            </ul>
+                            <a href="" class="button button-full-width">Buchen</a>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

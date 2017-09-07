@@ -1,0 +1,32 @@
+{% block content %}
+    <div class="fragment secondary-color">
+        {% if templateRender == false %}
+            {% include "atoms-colorswitch" %}
+        {% endif %}
+        <div class="page-wrapper">
+            <div class="content info-box">
+                <div class="headline">
+                    <h2>{{ headline }}</h2>
+                </div>
+                <div class="box-content">
+                    <div class="icon lightbulb"></div>
+                        <h3>Headline</h3>
+                        <p>
+                        <ul>
+                            <li>Eins</li>
+                            <li>Zwo</li>
+                            <li>Drei</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="box-text">
+                    <p>{{ text3 }}</p>
+                </div>
+
+        </div>
+    </div>
+
+    </div>
+
+{% endblock %}

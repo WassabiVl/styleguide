@@ -1,0 +1,123 @@
+//
+// Navigation
+//=================================================================================================
+
+
+// @globals
+//
+//===================================================================
+
+@import "../base/globals";
+
+
+
+// @variables
+//
+//===================================================================
+
+
+
+// @mixins
+//
+//===================================================================
+
+
+
+// @styles
+//
+//===================================================================
+
+@include exports("calandarize-elements") {
+  .calendarize-search{
+    input{
+      margin:0;
+    }
+    label{
+      margin-top: 0 !important;
+    }
+    button{
+      margin-top:0;
+    }
+
+  }
+
+  .categories-list{
+    ul{
+      margin-top:0;
+      li{
+        display:inline-block;
+        &.item.first{
+          padding-left:0 !important;
+        }
+      }
+    }
+  }
+
+  .fragment.calendarize-summary .calendarize{
+    .calendarize-panel{
+      width:33%;
+      padding: $pad;
+      display:inline-block;
+      color: $color-tertiary;
+      @media #{$large-down}{
+        width:100%;
+      }
+      .calendar-image{
+        position: relative;
+        img{
+          width:100%;
+        }
+        &:before{
+          content: " ";
+          background: linear-gradient(45deg,rgba(0,0,0,.05),rgba(0,0,0,.1));
+          position: absolute;
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+        }
+      }
+      .media-body{
+        border: 1px solid $gray-light;
+        border-top:0;
+        h2{
+          padding: .25rem 1rem 0 1rem;
+          max-width:100%;
+          width:100%;
+          text-align: left;
+          font-size:1.5rem;
+        }
+        .date{
+          font-size: .9rem;
+          color: $gray-medium;
+          padding: 0 1rem;
+          text-align: left;
+          &:before{
+            content: "\f073";
+            font-size:.8rem;
+            font-family: "Font Awesome 5 Light";
+            padding-right: .1rem;
+          }
+        }
+        .duration{
+          color: $gray-medium;
+          font-size: .9rem;
+          clear: both;
+          text-align: left;
+          &:before{
+            content: "\f017";
+            font-size:.8rem;
+            font-family: "Font Awesome 5 Light";
+            padding-right: .1rem;
+          }
+        }
+        p{
+          padding: 1rem 1rem .5rem 1rem;
+          a{
+            line-height: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{% block content %}
+{%  if bgColor is defined %}
+<div class="fragment {{bgColor}}">
+{% else %}
+<div class="fragment {{random(fragmentSetup.colorRange)}}">
+{% endif %}
+    {% if templateRender == false %}
+        {% include "atoms-colorswitch" %}
+    {% endif %}
+
+    <div class="page-wrapper">
+        <div class="row ns">
+            <div class="column column-100 no-padding">
+                <div class="headline">
+                    <h2>Bilder aus unserem Hotel</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row ns">
+            <div class="column column-100">
+                <div class="slick arrows no-padding gallery grouped-gallery variable-width" data-slick-elements="1">
+                    {% for image in galleryImages %}
+                        <div>
+                            <img class="gallery-item" height="{{ image.h }}" data-height="{{ image.h }}" data-width="{{ image.w }}" src="{{ image.src }}" data-src="{{ image.src }}">
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

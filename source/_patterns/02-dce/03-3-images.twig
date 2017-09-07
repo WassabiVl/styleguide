@@ -1,0 +1,29 @@
+{% block content %}
+    {%  if bgColor is defined %}
+        <div class="fragment {{bgColor}}">
+    {% else %}
+        <div class="fragment {{random(fragmentSetup.colorRange)}}">
+    {% endif %}
+    {% if templateRender == false %}
+        {% include "atoms-colorswitch" %}
+    {% endif %}
+
+    <div class="page-wrapper">
+        <div class="row three-images">
+            <div class="column column-66 column-s-100">
+                <img src="{{ img.landscape_2x1.src }}" alt="{{ img.landscape_2x1.alt }}" />
+            </div>
+            <div class="column column-33 column-s-100 no-padding">
+                <div class="row ns">
+                    <div class="column column-100 column-s-50">
+                        <img src="{{ img.landscape_2x1.src }}" alt="{{ img.landscape_2x1.alt }}" />
+                    </div>
+                    <div class="column column-100 column-s-50">
+                        <img src="{{ img.landscape_2x1.src }}" alt="{{ img.landscape_2x1.alt }}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
